@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact - Vertex Architecturals</title>
+<meta name="description" content="Tell us about your project. Request a quote for architectural epoxy flooring or outdoor surface finishes with Vertex Architecturals, Sydney.">
+<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand" aria-label="Vertex Architecturals - home">
+      <img src="assets/img/logo-white.png" alt="Vertex Architecturals" width="190" height="50">
+    </a>
+    <nav class="nav-primary" aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="tel:+61411887566" class="btn btn-primary">Call 0411 887 566</a>
+        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="tel:+61411887566" class="btn btn-primary">Call 0411 887 566</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero-no-image">
+    <div class="container">
+      <p class="small-label">Get in touch</p>
+      <h1>Let's talk about your project.</h1>
+      <p class="lede mt-4" style="color: var(--text-on-dark-muted); max-width: 56ch;">Whether you're planning a new floor, refreshing an existing surface or considering an outdoor finish, we'd be pleased to hear what you have in mind.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div>
+          <div class="contact-info-block">
+            <h4>Enquiries</h4>
+            <p>Use the form to tell us about your project and we'll be in touch to arrange next steps.</p>
+          </div>
+          <div class="contact-info-block">
+            <h4>Service area</h4>
+            <p>Servicing Greater Sydney, New South Wales.</p>
+          </div>
+          <div class="contact-info-block">
+            <h4>Services</h4>
+            <div class="contact-service-tags">
+              <a href="services.html#epoxy-flooring" class="tag-chip">Epoxy Flooring</a>
+              <a href="services.html#pathway-paving" class="tag-chip">Pathway Paving</a>
+              <a href="services.html#tv-feature-wall" class="tag-chip">TV Feature Wall</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <form data-enquiry-form novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+                <span class="field-error" data-error-for="name"></span>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+                <span class="field-error" data-error-for="email"></span>
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel">
+                <span class="field-error" data-error-for="phone"></span>
+              </div>
+              <div class="field">
+                <label for="location">Project location</label>
+                <input type="text" id="location" name="location" placeholder="Suburb, NSW" required>
+                <span class="field-error" data-error-for="location"></span>
+              </div>
+              <div class="field">
+                <label for="service">Service required</label>
+                <select id="service" name="service" required data-service-select>
+                  <option value="">Select a service</option>
+                  <option value="Plain Epoxy">Plain Epoxy</option>
+                  <option value="Metallic Epoxy">Metallic Epoxy</option>
+                  <option value="Textured Epoxy">Textured Epoxy</option>
+                  <option value="Pathway Paving">Pathway Paving</option>
+                  <option value="TV Feature Wall">TV Feature Wall</option>
+                  <option value="Not sure">Not sure yet</option>
+                </select>
+                <span class="field-error" data-error-for="service"></span>
+              </div>
+              <div class="field">
+                <label for="area">Approximate area <span class="opt">(m², optional)</span></label>
+                <input type="text" id="area" name="area" inputmode="numeric" placeholder="e.g. 40">
+              </div>
+              <div class="field full">
+                <label for="details">Project details</label>
+                <textarea id="details" name="details" required placeholder="Tell us about the space, timing and what you have in mind."></textarea>
+                <span class="field-error" data-error-for="details"></span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-5">Send Enquiry</button>
+            <p class="form-note">We'll respond directly once we've reviewed your enquiry.</p>
+            <div class="form-status" data-form-status role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/img/logo-white.png" alt="Vertex Architecturals" width="170" height="45">
+        <p>Architectural epoxy finishes and considered outdoor surfaces for Sydney homes and commercial spaces.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html#epoxy-flooring">Epoxy Flooring</a></li>
+          <li><a href="services.html#pathway-paving">Pathway Paving</a></li>
+          <li><a href="services.html#tv-feature-wall">TV Feature Wall</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="contact.html">Request a quote</a></li>
+          <li>Servicing Greater Sydney, NSW</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Vertex Architecturals. All rights reserved.</p>
+      <p class="footer-credit">Site by <span class="footer-credit-badge"><img src="assets/img/dolpo-logo.png" alt="Dolpo" width="90" height="23" loading="lazy"></span></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
